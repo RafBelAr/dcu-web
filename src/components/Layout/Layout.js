@@ -6,8 +6,12 @@ function Layout () {
         <div>
             <Header />
             <div className="flex flex-col sm:flex-row">
-                <NavBar />
-                <Outlet />
+                <div className="basis-1/6">
+                    <NavBar />
+                </div>
+                <div className="basis-10/12">
+                    <Outlet />
+                </div>
             </div>
         </div>
     );
