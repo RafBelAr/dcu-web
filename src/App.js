@@ -9,7 +9,7 @@ import NotFound from './components/NotFound/NotFound';
 // Routes
 import Home from './routes/Home';
 import Login from './routes/Login';
-
+import Cursos from './routes/Cursos';
 
 const router = createBrowserRouter ([
   {
@@ -18,7 +18,8 @@ const router = createBrowserRouter ([
     errorElement: <NotFound />,
     children: [
       { path: "", element: <Home /> },
-      { path: "/Home", element: <Home /> }
+      { path: "/Home", element: <Home /> },
+      { path: "/Cursos", element: <Cursos />}
     ]
   },
   {

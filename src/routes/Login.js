@@ -10,7 +10,7 @@ function Login (props) {
     return (
         <div className="flex flex-col p-48 align-middle justify-center slef-center space-y-24">
             <div className="self-center w-full">
-                <Title className="text-sm sm:text-xl " titleName="E-Cademy" />
+                <Title titleName="E-Cademy" />
 
                 <div className="space-y-5 mt-14 text-center w-full">
                     <InputField className="min-w-72" type="text" placeholder="Usuario*" />
@@ -19,7 +19,7 @@ function Login (props) {
 
                 <div className="text-center mt-14 border-none w-full">
                     <a href="/Home">
-                        <ButtonStyled buttonName="Login" onClick={setCookie()} />
+                        <ButtonStyled buttonName="Login" onClick={setCookie} />
                     </a>
                 </div>
             </div>
