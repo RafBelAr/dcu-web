@@ -11,6 +11,7 @@ import Home from './routes/Home';
 import Login from './routes/Login';
 import Cursos from './routes/Cursos';
 import Curso from './routes/Curso';
+import Asesoramiento from './routes/Asesoramiento';
 
 const router = createBrowserRouter ([
   {
@@ -21,7 +22,8 @@ const router = createBrowserRouter ([
       { path: "", element: <Home /> },
       { path: "/Home", element: <Home /> },
       { path: "/Cursos", element: <Cursos />},
-      { path: "/Cursos/:id", element: <Curso />}
+      { path: "/Cursos/:id", element: <Curso />},
+      { path: "/Asesoramiento", element: <Asesoramiento /> }
     ]
   },
   {
