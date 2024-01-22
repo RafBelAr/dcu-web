@@ -10,6 +10,7 @@ import NotFound from './components/NotFound/NotFound';
 import Home from './routes/Home';
 import Login from './routes/Login';
 import Cursos from './routes/Cursos';
+import Curso from './routes/Curso';
 
 const router = createBrowserRouter ([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter ([
     children: [
       { path: "", element: <Home /> },
       { path: "/Home", element: <Home /> },
-      { path: "/Cursos", element: <Cursos />}
+      { path: "/Cursos", element: <Cursos />},
+      { path: "/Cursos/:id", element: <Curso />}
     ]
   },
   {

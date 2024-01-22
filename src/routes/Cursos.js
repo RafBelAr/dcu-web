@@ -36,20 +36,20 @@ function Cursos () {
             </div>
 
             <div id="course-div" className="mt-2 grid grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 gap-4" >
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
             </div>
 
             <div id="my-course-div" className="mt-2 grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 gap-4 hidden" >
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Integración de aplicaciones" courseImage={courseImage} courseLink="#"/>
-                <CourseCard courseName="Diseño Web" courseImage={courseImage} courseLink="#"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
+                <CourseCard courseName="Integración de aplicaciones" courseImage={courseImage} courseLink="/Cursos/Integración%20de%20Aplicaciones"/>
+                <CourseCard courseName="Diseño Web" courseImage={courseImage} courseLink="/Cursos/Diseño%20Web"/>
             </div>
             
         </div>
