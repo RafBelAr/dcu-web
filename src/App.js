@@ -13,6 +13,7 @@ import Cursos from './routes/Cursos';
 import Curso from './routes/Curso';
 import Asesoramiento from './routes/Asesoramiento';
 import Contacto from './routes/Contacto';
+import Notificaciones from './routes/Notificaciones';
 
 const router = createBrowserRouter ([
   {
@@ -25,7 +26,8 @@ const router = createBrowserRouter ([
       { path: "/Cursos", element: <Cursos />},
       { path: "/Cursos/:id", element: <Curso />},
       { path: "/Asesoramiento", element: <Asesoramiento /> },
-      { path: "/Contacto", element: <Contacto /> }
+      { path: "/Contacto", element: <Contacto /> },
+      { path: "/Notificaciones", element: <Notificaciones /> }
     ]
   },
   {
