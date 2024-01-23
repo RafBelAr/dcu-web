@@ -14,6 +14,7 @@ import Curso from './routes/Curso';
 import Asesoramiento from './routes/Asesoramiento';
 import Contacto from './routes/Contacto';
 import Notificaciones from './routes/Notificaciones';
+import Calificaciones from './routes/Calificaciones';
 
 const router = createBrowserRouter ([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter ([
       { path: "/Cursos/:id", element: <Curso />},
       { path: "/Asesoramiento", element: <Asesoramiento /> },
       { path: "/Contacto", element: <Contacto /> },
-      { path: "/Notificaciones", element: <Notificaciones /> }
+      { path: "/Notificaciones", element: <Notificaciones /> },
+      { path: "/Calificaciones", element: <Calificaciones /> }
     ]
   },
   {
