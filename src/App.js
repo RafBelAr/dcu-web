@@ -16,6 +16,7 @@ import Contacto from './routes/Contacto';
 import Notificaciones from './routes/Notificaciones';
 import Calificaciones from './routes/Calificaciones';
 import Calendario from './routes/Calendario';
+import Materiales from './routes/Materiales';
 
 const router = createBrowserRouter ([
   {
@@ -31,7 +32,8 @@ const router = createBrowserRouter ([
       { path: "/Contacto", element: <Contacto /> },
       { path: "/Notificaciones", element: <Notificaciones /> },
       { path: "/Calificaciones", element: <Calificaciones /> },
-      { path: "/Calendario", element: <Calendario /> }
+      { path: "/Calendario", element: <Calendario /> },
+      { path: "/Materiales", element: <Materiales /> }
     ]
   },
   {
