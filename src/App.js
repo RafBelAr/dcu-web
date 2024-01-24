@@ -17,6 +17,7 @@ import Notificaciones from './routes/Notificaciones';
 import Calificaciones from './routes/Calificaciones';
 import Calendario from './routes/Calendario';
 import Materiales from './routes/Materiales';
+import Pruebas from './routes/Pruebas';
 
 const router = createBrowserRouter ([
   {
@@ -33,7 +34,8 @@ const router = createBrowserRouter ([
       { path: "/Notificaciones", element: <Notificaciones /> },
       { path: "/Calificaciones", element: <Calificaciones /> },
       { path: "/Calendario", element: <Calendario /> },
-      { path: "/Materiales", element: <Materiales /> }
+      { path: "/Materiales", element: <Materiales /> },
+      { path: "/Pruebas", element: <Pruebas /> }
     ]
   },
   {
