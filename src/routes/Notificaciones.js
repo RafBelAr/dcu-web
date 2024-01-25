@@ -3,8 +3,12 @@ import News from "../components/News/News";
 
 // Problema de cors
 async function getNews () {
-    let url = 'https://pedvalar.webs.upv.es/iap/rest/gva/noticias'
+    let url = '/iap/rest/gva/noticias'
+    const response = await fetch (url)
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
 
+    console.log(response);
 }
 
 function Notificaciones () {
