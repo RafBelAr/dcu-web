@@ -3,7 +3,6 @@ import CourseCard from "../components/CourseCard/CourseCard";
 
 import courseImage from "../images/course-image.png";
 
-let hiddenVal = false;
 
 function setHiddenFalse () {
     document.getElementById("my-courses").className = "hover:cursor-pointer text-gray-400 hover:text-gray-600";
@@ -47,9 +46,9 @@ function Cursos () {
             </div>
 
             <div id="my-course-div" className="mt-2 grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 gap-4 hidden" >
-                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/Desarollo%20Centrado%20en%20el%20Usuario"/>
-                <CourseCard courseName="Integración de aplicaciones" courseImage={courseImage} courseLink="/Cursos/Integración%20de%20Aplicaciones"/>
-                <CourseCard courseName="Diseño Web" courseImage={courseImage} courseLink="/Cursos/Diseño%20Web"/>
+                <CourseCard courseName="Desarrollo Centrado en el Usuario" courseImage={courseImage} courseLink="/Cursos/DCU" />
+                <CourseCard courseName="Integración de aplicaciones" courseImage={courseImage} courseLink="/Cursos/IAP" />
+                <CourseCard courseName="Diseño Web" courseImage={courseImage} courseLink="/Cursos/DEW" />
             </div>
             
         </div>

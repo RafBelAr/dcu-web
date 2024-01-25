@@ -3,7 +3,7 @@ import hamburgerIcon from '../../images/icons/hamburger.svg'
 
 function getLink () {
     if (document.cookie.includes("cookie-logged")) {
-        return "/mi-cuenta";
+        return "/Notificaciones";
     } else {
         return "/Login"
     }

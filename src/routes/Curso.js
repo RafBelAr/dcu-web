@@ -9,7 +9,15 @@ import { ButtonStyled } from "../components/ButtonStyled/ButtonStyled";
 function Curso (props) {
 
     const { id } = useParams();
+    let divStyle = "flex flex-row sm:w-[90%] justify-center sm:justify-end";
+    let inscritoStyle = "hidden";
+    if (id === "DCU" || id === "IAP" || id === "DEW") {
+        divStyle = "hidden";
+        inscritoStyle = "flex flex-row sm:w-[90%] justify-between";
+        console.log ("Ha entrado")
+    }
 
+    console.log (id === "DCU" || id === "IAP" || id === "DEW")
 
     return (
         <div className="p-4">
@@ -38,8 +46,15 @@ function Curso (props) {
             <TextDescComp titleName="Horarios" descriptionName="17:30 - 19:30 de Martes a Jueves" />
             <TextDescComp titleName="Precio" descriptionName="49€ / mes" />
 
-            <div className="flex flex-row sm:w-[90%] justify-center sm:justify-end">
+
+            <div className={divStyle}>
                 <ButtonStyled className="min-w-80" buttonName="Inscribirme" />
+            </div>
+            <div className={inscritoStyle} >
+                <a className="pt-3 underline text-blue-400 font-semibold" href="/Foro">
+                    Foro de ayuda
+                </a>
+                <button className="min-w-48 w-[10%] bg-red-600 p-3 text-white font-semibold text-lg border-none rounded-[37px] focus:ring-blue-500 focus:border-blue-500 hover:scale-105" type="submit" >Desinscribirme</button>
             </div>
         </div>
     );

@@ -18,6 +18,9 @@ import Calificaciones from './routes/Calificaciones';
 import Calendario from './routes/Calendario';
 import Materiales from './routes/Materiales';
 import Pruebas from './routes/Pruebas';
+import Foro from './routes/Foro';
+import Pregunta from './routes/Pregunta';
+import Respuesta from './routes/Respuesta';
 
 const router = createBrowserRouter ([
   {
@@ -35,7 +38,11 @@ const router = createBrowserRouter ([
       { path: "/Calificaciones", element: <Calificaciones /> },
       { path: "/Calendario", element: <Calendario /> },
       { path: "/Materiales", element: <Materiales /> },
-      { path: "/Pruebas", element: <Pruebas /> }
+      { path: "/Pruebas", element: <Pruebas /> },
+      { path: "/Foro", element: <Foro /> },
+      { path: "/Foro/:id", element: <Pregunta />},
+      { path: "/Foro/:id/Respuesta", element: <Respuesta />}
+
     ]
   },
   {

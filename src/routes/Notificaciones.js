@@ -4,12 +4,11 @@ import News from "../components/News/News";
 // Problema de cors
 async function getNews () {
     let url = 'https://pedvalar.webs.upv.es/iap/rest/gva/noticias'
-    const response = await fetch (url);
-    const news = await response.json();
-    console.log (news)
+
 }
 
 function Notificaciones () {
+    getNews();
     return (
         <div className="flex flex-col p-3">
             <Title  titleName="Notificaciones" />
