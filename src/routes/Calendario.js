@@ -2,7 +2,7 @@ import sortIcon from "../images/icons/sort-icon.svg";
 import locatonIcon from "../images/icons/location.svg";
 import prof1Icon from "../images/icons/prof1.svg";
 import jennyIcon from "../images/icons/jennyIcon.svg";
-
+import { message } from "antd";
 
 function Calendario () {
     return (
@@ -12,7 +12,7 @@ function Calendario () {
                     Calendario
                 </p>
                 <div>
-                    <a href="#" className="text-blue-400 underline font-regular ">Sincronizar Calendario</a>
+                    <a onClick={() => message.success("Calendario sincronizado")} href="#" className="text-blue-400 underline font-regular ">Sincronizar Calendario</a>
                 </div>
             </div>
             <div className="flex flex-row p-6 justify-between w-[90%]">

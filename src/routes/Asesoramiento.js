@@ -1,6 +1,7 @@
 import { ButtonStyled } from "../components/ButtonStyled/ButtonStyled";
 import InputField from "../components/InputField/InputField";
 import TextDescComp from "../components/TextDescriptionComp/TextDescComp";
+import { message } from "antd";
 
 function Asesoramiento () {
     return (
@@ -23,7 +24,7 @@ function Asesoramiento () {
             <textarea className="min-w-72 border-solid border p-2 border-gray-200 rounded-md w-[30%] h-14 resize-none" type="textbox" placeholder="Tu mensaje*" />
             <br />
             <br />
-            <ButtonStyled className="mt-24" buttonName="Pedir Asesoramiento" value="confirmar" />
+            <ButtonStyled onClick={() => message.success("Asesoramiento pedido")} className="mt-24" buttonName="Pedir Asesoramiento" value="confirmar" />
         </div>
     );
 }
