@@ -1,11 +1,31 @@
+import { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard/CourseCard";
 import News from "../components/News/News";
-import Title from "../components/Title/Title";
 
 import courseImage from "../images/course-image.png";
 
+/*
+
+{respo.map(nw => (
+                    c))
+                }
+
+*/
+
+async function getNews () {
+    
+    const response = await fetch ("/iap/rest/gva/noticias");
+    const n = await response.json();
+    
+    return n;
+}
+
 
 function Home (props) {
+    const n = getNews()
+    let t = [];
+    n.then(data => data.map((k, v) => t.push(k)))
+    console.log(t)
     return (
         <div className="flex flex-col">
             <div className="text-left">
@@ -42,6 +62,10 @@ function Home (props) {
                 summary="Francisco Pacheco" 
                 link="/Foro/4"
                 />
+                {
+                    t.map ((k) => <p>k</p>
+                    )
+                }
                 </div>
             </div>
         </div>
