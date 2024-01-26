@@ -2,6 +2,7 @@ import { generatePath, useParams } from "react-router-dom";
 import Title from "../components/Title/Title";
 import ArrowBackIcon from "../images/icons/arrow_back.svg";
 import CourseImage from "../images/course-image.png";
+import { message } from "antd";
 
 import TextDescComp from "../components/TextDescriptionComp/TextDescComp";
 import { ButtonStyled } from "../components/ButtonStyled/ButtonStyled";
@@ -48,13 +49,13 @@ function Curso (props) {
 
 
             <div className={divStyle}>
-                <ButtonStyled className="min-w-80" buttonName="Inscribirme" />
+                <ButtonStyled onClick={() => message.success("Inscripción realizada")} className="min-w-80" buttonName="Inscribirme" />
             </div>
             <div className={inscritoStyle} >
                 <a className="pt-3 underline text-blue-400 font-semibold" href="/Foro">
                     Foro de ayuda
                 </a>
-                <button className="min-w-48 w-[10%] bg-red-600 p-3 text-white font-semibold text-lg border-none rounded-[37px] focus:ring-blue-500 focus:border-blue-500 hover:scale-105" type="submit" >Desinscribirme</button>
+                <button onClick={() => message.success("Desuscripción realizada")} className="min-w-48 w-[10%] bg-red-600 p-3 text-white font-semibold text-lg border-none rounded-[37px] focus:ring-blue-500 focus:border-blue-500 hover:scale-105" type="submit" >Desinscribirme</button>
             </div>
         </div>
     );

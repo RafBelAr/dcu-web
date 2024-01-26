@@ -4,6 +4,7 @@ import Title from "../components/Title/Title";
 import ArrowBackIcon from "../images/icons/arrow_back.svg";
 import plusIcon from "../images/icons/plus-icon.svg";
 import { ButtonStyled } from "../components/ButtonStyled/ButtonStyled";
+import { message } from "antd";
 
 function Respuesta () {
     const { id } = useParams();
@@ -20,7 +21,7 @@ function Respuesta () {
                 <div className="flex flex-row space-x-14">
                     <textarea className="min-w-72 border-solid border p-2 border-gray-200 sm:ml-10 mt-5 rounded-md w-[30%] resize-none h-28" type="textbox" placeholder="Tu Pregunta*" />
                     <div  className="self-end">
-                        <ButtonStyled buttonName="Preguntar" />
+                        <ButtonStyled onClick={() => message.success("Pregunta realizada")} buttonName="Preguntar" />
                     </div>
                 </div>
             <div>
